@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@theme {
+  /* Font Sizes */
+    --text-small: 18px;
+ --text-tiny-small: 14px;
+  --text-body: 16px;
+  --text-subtitle: 20px;
+  --text-small-heading: 28px;
+  --text-medium-heading: 32px;
+  --text-heading: 48px;
+  --text-hero: 52px;
+
+
+  --font-Montserrat: "Montserrat", sans-serif;
+  --font-Rubik: "Rubik", sans-serif;
+}
