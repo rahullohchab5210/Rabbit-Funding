@@ -26,7 +26,7 @@ function Footer() {
                         <path d="M264.63 0.49047C265.479 -0.0729656 268.319 -0.175433 269.192 0.31114C269.484 0.464808 270.066 0.951474 270.479 1.38687C271.571 2.53932 271.789 3.12843 271.789 4.92118C271.789 6.91884 271.279 7.91767 269.678 8.96772C268.804 9.55674 268.27 9.73606 267.275 9.73607C264.824 9.73607 263.149 8.4554 262.421 6.04793C262.057 4.81866 262.033 4.48567 262.324 3.53807C262.688 2.30877 263.513 1.20758 264.63 0.49047Z" fill="#303237" />
                     </svg>
                     </a>
-                    <div className='grid lg:grid-cols-4 sm:grid-cols-2 px-3 justify-between w-full  max-lg:gap-y-5  '>
+                    <div className='grid lg:grid-cols-4 sm:grid-cols-2 justify-between w-full  max-lg:gap-y-5  '>
                         <div>
                             <span className='pb-3 font-Montserrat text-body text-[#4E4E4E] font-semibold leading-[100%] tracking-[0%]'>Rated 4.9 on trustpilot.</span>
                             <span><svg width="171" height="81" viewBox="0 0 171 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@ function Footer() {
                         <div className='flex flex-col gap-4  '>
                             <h6 className='text-[#4E4E4E] font-Montserrat text-body font-semibold leading=[100%] tracking-[0%]'>Contact</h6>
                             {CONTACT_LINKS.map((item, i) => {
-                                return <a key={i} href="#" className={`flex items-center gap-2 text-[#4E4E4E] font-Montserrat text-body font-normal leading=[150%] tracking-[0%] relative  ${item.link === "Admin@rabbitfunding.io" ? "underline" :" group"}`}><span><Icons icon={item.icon} /></span>{item.link}
+                                return <a key={i} href="#" className={`flex items-center gap-2 text-[#4E4E4E] font-Montserrat text-body font-normal leading=[150%] tracking-[0%] relative  ${item.link === "Admin@rabbitfunding.io" ? "underline hover:underline-none" :" group"}`}><span><Icons icon={item.icon} /></span>{item.link}
                                     <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#4E4E4E]   transition-all duration-300 group-hover:w-full rounded"></span>
                                 </a>
                             })}
