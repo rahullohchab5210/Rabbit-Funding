@@ -53,3 +53,81 @@ export const CARD_DATA = [
         description: "Event Rentals, NJ"
     }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+export const STORIES_DATA = [
+    {
+        paragraph: "I needed $75K to build out my second salon. Rabbit gave me the offer same day.",
+        img: "/assets/images/KarinaProfile.png",
+        title: "Karina M.",
+        description: "Beauty Business, Miami FL"
+    },
+    {
+        paragraph: "They looked at my actual business, not just my credit. We’ve grown 30% since funding.",
+        img: "/assets/images/DaveProfile.png",
+        title: "Dave R.",
+        description: "Landscaping Contractor, Dallas TX"
+    },
+    {
+        paragraph: "It felt more like a conversation than an application. I was approved in hours.",
+        img: "/assets/images/MalikProfile.png",
+        title: "Malik J.",
+        description: "Food Truck Owner, Chicago IL"
+    }
+];
+
+
+
+
+
+export const OUICK_LINKS = [
+    {
+        link: "Home"
+    },
+    {
+        link: "Programs"
+    },
+    {
+        link: "How It Works"
+    },
+    {
+        link: "About"   
+    },
+    {
+        link: "Testimonials"
+    }
+];
+
+export const LEGAL_LINKS = [
+    {
+        link: "Terms & Conditions"
+    },
+    {
+        link: "Privacy Policy"
+    }
+];
+
+export const CONTACT_LINKS = [
+    {
+        icon: "CALL_ICON",
+        link: "520-702-5510"
+    },
+    {
+        icon: "MESSAGE_ICON",
+        link: "Admin@rabbitfunding.io"
+    },
+    {
+        icon: "LOCATION_ICON",
+        link: "28 Liberty St, NY, NY, 10005"
+    }    
+];

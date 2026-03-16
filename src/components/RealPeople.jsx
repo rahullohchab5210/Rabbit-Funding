@@ -6,7 +6,7 @@ function RealPeople() {
     return (
         <div className='max-w-285 mx-auto px-3 pb-42.5 w-full'>
             <h2 className='pb-15 font-Montserrat text-[#2B2B2B] text-heading font-bold text-center leading-[120%] tracking-[0%] max-sm:text-medium-heading'>Real People. Real Results.</h2>
-            <div className='flex flex-row items-center  flex-wrap gap-y-6 w-full  '>
+            <div className='flex flex-row items-center -mx-3 flex-wrap gap-y-6 max-[1200px]:w-full  '>
                 {CARD_DATA.map((card, i) => {
                     return <div key={i} className='lg:w-1/2 px-3 w-full '>
                         <div className='p-6 shadow-xl rounded-3xl bg-white min-h-98.5 flex w-full'>
