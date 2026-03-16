@@ -70,7 +70,7 @@ function Footer() {
                         <div className='flex flex-col gap-4  '>
                             <h6 className='text-[#4E4E4E] font-Montserrat text-body font-semibold leading=[100%] tracking-[0%]'>Contact</h6>
                             {CONTACT_LINKS.map((item, i) => {
-                                return <a key={i} href="#" className='flex items-center gap-2 text-[#4E4E4E] font-Montserrat text-body font-normal leading=[150%] tracking-[0%] relative group'><span><Icons icon={item.icon} /></span>{item.link}
+                                return <a key={i} href="#" className={`flex items-center gap-2 text-[#4E4E4E] font-Montserrat text-body font-normal leading=[150%] tracking-[0%] relative  ${item.link === "Admin@rabbitfunding.io" ? "underline" :" group"}`}><span><Icons icon={item.icon} /></span>{item.link}
                                     <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#4E4E4E]   transition-all duration-300 group-hover:w-full rounded"></span>
                                 </a>
                             })}
