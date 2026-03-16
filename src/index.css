@@ -8,10 +8,12 @@ body {
 
 @theme {
   /* Font Sizes */
-    --text-small: 18px;
- --text-tiny-small: 14px;
+
+  --text-tiny-small: 14px;
   --text-body: 16px;
+  --text-small: 18px;
   --text-subtitle: 20px;
+  --text-medium: 24px;
   --text-small-heading: 28px;
   --text-medium-heading: 32px;
   --text-heading: 48px;

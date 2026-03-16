@@ -47,7 +47,7 @@ function Navbar() {
                             {NAVLINKS.map((link, i) => {
                                 return <NavLink key={i} to={link === 'home' ? '/' : link}
                                     onClick={() => setMenuOpen(null)}
-                                    className={({ isActive }) => `capitalize text-[#4E4E4E] text-body font-normal leading-[150%] tracking-[0%] max-lg:text-[24px] relative inline-block group ${isActive && 'font-semibold'}`}>
+                                    className={({ isActive }) => `capitalize  text-body font-normal leading-[150%] tracking-[0%] max-lg:text-[24px] relative inline-block group ${isActive && 'font-semibold text-[#2B2B2B]' || 'text-[#4E4E4E] '}`}>
                                     {
                                         link === "works"
                                             ? "How It Works"
@@ -57,7 +57,7 @@ function Navbar() {
                                 </NavLink>
                             })}
                         </div>
-                        <Button className="hover:bg-black hover:text-white hover:border-transparent transition-all duration-300"
+                        <Button className="hover:bg-black hover:text-white hover:border-transparent transition-all duration-300 py-4.5 px-7.75"
                             text="Contact Us"
                         />
 
