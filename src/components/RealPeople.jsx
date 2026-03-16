@@ -9,7 +9,7 @@ function RealPeople() {
             <div className='flex flex-row items-center flex-wrap gap-y-6 max-[1200px]:w-full  '>
                 {CARD_DATA.map((card, i) => {
                     return <div key={i} className='lg:w-1/2 px-3 w-full '>
-                        <div className='p-6 shadow-xl rounded-3xl bg-white min-h-98.5 flex w-full'>
+                        <div className='p-6 shadow-xl rounded-3xl bg-white min-h-98.5 flex w-full hover:scale-103 transition-all duration-300'>
                             <div className='flex flex-col justify-between w-full'>
                                 <div className='flex flex-col'>
                                     <div className='flex flex-row items-center gap-[4.59px]'>

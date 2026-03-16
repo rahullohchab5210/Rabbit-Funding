@@ -13,7 +13,7 @@ function RealStories() {
                     <div className='flex flex-row items-center -mx-3 flex-wrap max-lg:gap-y-6 max-[1200px]:w-full'>
                         {STORIES_DATA.map((card, i) => {
                             return <div key={i} className='w-full md:w-1/2 lg:w-1/3 px-3 '>
-                                <div className='shadow-lg rounded-3xl bg-white p-6 min-h-60 flex w-full'>
+                                <div className='shadow-lg rounded-3xl bg-white p-6 min-h-60 flex w-full hover:scale-105 transition-all duration-300'>
                                     <div className='flex flex-col justify-between w-full'>
                                         <div className='flex flex-col'>
                                             <div className='flex flex-row items-center gap-[5.46px]'>
