@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../components/HeroSection'
+import Hero from '../components/Hero'
 import BetterTech from '../components/BetterTech'
 import BehindRabbit from '../components/BehindRabbit'
 import RealPeople from '../components/RealPeople'
@@ -8,14 +8,14 @@ import RealStories from '../components/RealStories'
 
 function Home() {
   return (
-      <>
-       <HeroSection />
-          <BetterTech />
-          <BehindRabbit />
-          <RealPeople />
-          <WorkedRabbit />
-          <RealStories />
-      </>
+    <>
+      <Hero />
+      <BetterTech />
+      <BehindRabbit />
+      <RealPeople />
+      <WorkedRabbit />
+      <RealStories />
+    </>
   )
 }
 

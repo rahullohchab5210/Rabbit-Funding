@@ -1,14 +1,10 @@
 @import "tailwindcss";
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
 
 
 
 @theme {
   /* Font Sizes */
-
   --text-tiny-small: 14px;
   --text-body: 16px;
   --text-small: 18px;
@@ -20,6 +16,28 @@ body {
   --text-hero: 52px;
 
 
+  /*  Colors */
+  --color-primary: #2b2b2b;
+  --color-secondary: #4e4e4e;
+  --color-ternary: #F5F5F5;
+  --color-green: #5daf50;
+  --color-light-green: #e8f5e0;
+  --color-greener: #7ac943;
+  --color-dark-green: #0101013d;
+
+
+  /* Font */
   --font-Montserrat: "Montserrat", sans-serif;
   --font-Rubik: "Rubik", sans-serif;
+
+
+/* Line Heights */
+  --spacing-100: 100%;
+  --spacing-120: 120%;
+  --spacing-125: 125%;
+  --spacing-150: 150%;
+
+
+/* Letter Spacing */
+  --tracking-normal: 0%;
 }

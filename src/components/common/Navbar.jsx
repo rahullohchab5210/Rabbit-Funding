@@ -35,28 +35,26 @@ function Navbar() {
 
 
     return (
-        <div className={`py-5 fixed top-0 z-20 w-full ${isScrolled ? "bg-[#e8f5e0]  shadow-lg" : "bg-transparent"}`}>
+        <div className={`py-5 fixed top-0 z-20 w-full ${isScrolled ? "bg-light-green  shadow-lg" : "bg-transparent"}`}>
             <div className='max-w-285 mx-auto px-3'>
-                <div className='flex items-center justify-between '>
-                    <Link to={"/"} className="z-20  ">
-                        <Icons icon="LOGO_ICON" />
+                <div className='flex items-center justify-between'>
+                    <Link to={"/"} className="z-20">
+                        <Icons icon="LOGO" widthlogo="132" heightlogo="60" />
                     </Link>
-                    <div className={`flex lg:gap-44.25 gap-6  items-center max-lg:flex-col max-lg:justify-center max-[1024px]:fixed max-[1024px]:bg-[#e8f5e0]  max-[1024px]:backdrop-blur-[50px] max-[1024px]:h-full max-[1024px]:w-full max-[1024px]:top-0 max-[1024px]:transition-all max-[1024px]:duration-300 max-[1024px]:ease-linear z-1 ${menuOpen === "show" ? "max-[1024px]:right-0" : "max-[1024px]:-right-full"}`}>
-                        <div className='flex  max-lg:flex-col gap-6  items-center'>
+                    <div className={`flex lg:gap-44.25 gap-6 items-center max-lg:flex-col max-lg:justify-center max-[1024px]:fixed max-[1024px]:bg-light-green max-[1024px]:backdrop-blur-[50px] max-[1024px]:h-full max-[1024px]:w-full max-[1024px]:top-0 max-[1024px]:transition-all max-[1024px]:duration-300 max-[1024px]:ease-linear z-1 ${menuOpen === "show" ? "max-[1024px]:right-0" : "max-[1024px]:-right-full"}`}>
+                        <div className='flex max-lg:flex-col gap-6 items-center'>
                             {NAVLINKS.map((link, i) => {
-                                return <NavLink key={i} to={link === 'home' ? '/' : link}
+                                return <NavLink key={i} to={link.link === 'home' ? '/' : link.link}
                                     onClick={() => setMenuOpen(null)}
-                                    className={({ isActive }) => `capitalize  text-body font-normal leading-[150%] tracking-[0%] max-lg:text-medium relative inline-block group ${isActive && 'font-semibold text-[#2B2B2B]' || 'text-[#4E4E4E] '}`}>
+                                    className={({ isActive }) => `capitalize font-Montserrat text-body font-normal leading-150 tracking-normal max-lg:text-medium relative inline-block group ${isActive && 'font-semibold text-primary' || 'text-secondary'}`}>
                                     {
-                                        link === "works"
-                                            ? "How It Works"
-                                            : link
+                                        link.name
                                     }
-                                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#4E4E4E]   transition-all duration-300 group-hover:w-full rounded"></span>
+                                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full rounded"></span>
                                 </NavLink>
                             })}
                         </div>
-                        <Button className="hover:bg-black hover:text-white hover:border-transparent transition-all duration-300 py-4.5 px-7.75"
+                        <Button className=" hover:bg-black hover:text-white hover:border-transparent transition-all duration-300 py-4.5 px-7.75"
                             text="Contact Us"
                         />
                     </div>

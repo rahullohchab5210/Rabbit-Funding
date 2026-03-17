@@ -1,27 +1,50 @@
-export const NAVLINKS = ["home", "programs", "works", "testimonial", "about"];
+import { ABOUT, HOME, PROGRAMS, TESTIMONIAL, WORKS } from "./consonants";
+
+export const NAVLINKS = [
+    {
+        name: "home",
+        link: HOME
+    },
+    {
+        name: "programs",
+        link: PROGRAMS
+    },
+    {
+        name: "how it works",
+        link: WORKS
+    },
+    {
+        name: "testimonial",
+        link: TESTIMONIAL
+    },
+    {
+        name: "about",
+        link: ABOUT
+    },
+];
 
 export const BETTER_TECH_DATA = [
     {
-        icon: "STAR_ICON",
+        icon: "STAR",
         title: "Smarter Systems. Faster Funding."
     },
     {
-        icon: "APPROVAL_ICON",
+        icon: "APPROVAL",
         title: "Approvals That Make Sense"
     },
     {
-        icon: "NO_SCRIPTS_ICON",
+        icon: "NO_SCRIPTS",
         title: "No Suits. No Scripts. Just Results."
     },
     {
-        icon: "SECURITY_TECH_ICON",
+        icon: "SECURITY_TECH",
         title: "Tech that speeds things up"
     }
 ];
 
 
 export const FIVE_STAR_ICON_DATA = {
-    icon: "FIVE_STAR_ICON"
+    icon: "FIVE_STAR"
 };
 
 
@@ -101,7 +124,7 @@ export const OUICK_LINKS = [
         link: "How It Works"
     },
     {
-        link: "About"   
+        link: "About"
     },
     {
         link: "Testimonials"
@@ -119,17 +142,17 @@ export const LEGAL_LINKS = [
 
 export const CONTACT_LINKS = [
     {
-        icon: "CALL_ICON",
+        icon: "CALL",
         link: "520-702-5510"
     },
     {
-        icon: "MESSAGE_ICON",
+        icon: "MESSAGE",
         link: "Admin@rabbitfunding.io"
     },
     {
-        icon: "LOCATION_ICON",
+        icon: "LOCATION",
         link: "28 Liberty St, NY, NY, 10005"
-    }    
+    }
 ];
 
 
