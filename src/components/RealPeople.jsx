@@ -1,4 +1,3 @@
-import React from 'react'
 import { CARD_DATA, FIVE_STAR_ICON_DATA } from '../utils/helper'
 import Icons from './common/Icons'
 
@@ -6,7 +5,7 @@ function RealPeople() {
     return (
         <div className='max-w-285 mx-auto px-3 pb-42.5 max-lg:pb-17.5 max-sm:pb-12.5 w-full'>
             <h2 className='max-sm:pb-7 pb-15 font-Montserrat text-[#2B2B2B] text-heading font-bold text-center leading-[120%] tracking-[0%] max-sm:text-medium'>Real People. Real Results.</h2>
-            <div className='flex flex-row items-center -mx-3 flex-wrap gap-y-6 max-[1200px]:w-full  '>
+            <div className='flex flex-row items-center -mx-3 flex-wrap gap-y-5 max-[1200px]:w-full  '>
                 {CARD_DATA.map((card, i) => {
                     return <div key={i} className='lg:w-1/2 px-2 w-full '>
                         <div className='p-5 shadow-[0px_4px_54px_0px_rgba(0,0,0,0.05)] rounded-3xl bg-white min-h-98.5 flex w-full hover:scale-103 transition-all duration-300'>
@@ -42,41 +41,3 @@ function RealPeople() {
 }
 
 export default RealPeople
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react'
-
-// function RealPeople() {
-//   return (
-//       <div className="max-w-285 mx-auto flex flex-col items-center gap-15 px-4 md:mb-42.5 mb-15">
-//           {/* <Heading h2={"Real People. Real Results."} /> */}
-//           <div className="grid md:grid-cols-2 gap-6 md:px-0 px-6">
-//               {TESTIMONIALS.slice(0, visibleCount).map((card, i) => (
-//                   <div key={i} className="flex">
-//                       <Card
-//                           image={card.image}
-//                           name={card.name}
-//                           desc={card.desc}
-//                           profession={card.profession}
-//                       />
-//                   </div>
-//               ))}
-//           </div>
-//       </div>
-//   )
-// }
-
-// export default RealPeople
-

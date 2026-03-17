@@ -1,4 +1,3 @@
-import React from 'react'
 import { FIVE_STAR_ICON_DATA, STORIES_DATA } from '../utils/helper'
 import Icons from './common/Icons'
 import Button from './common/Btn'
@@ -6,7 +5,7 @@ import Button from './common/Btn'
 function RealStories() {
     return (
         <div className='bg-white '>
-            <div className='max-w-285 mx-auto px-3 relative pb-99.5 max-sm:pb-70 pt-42.5 max-lg:pt-17.5 max-sm:pt-12.5'>
+            <div className='max-w-285 mx-auto px-3 relative pb-99.5 max-sm:pb-90 pt-42.5 max-lg:pt-17.5 max-sm:pt-12.5'>
                 <div className='flex flex-col items-center  '>
                     <h2 className='font-Montserrat text-hero text-[#2B2B2B] font-bold text-center leading-[120%] tracking-[0%] max-sm:text-medium'>Real Stories. Real Funding.</h2>
                     <p className='pt-3 pb-15 max-sm:pb-7 max-w-147.5 font-Montserrat text-body text-center text-[#4E4E4E] font-normal leading-[150%] tracking-[0%]'>We’ve helped small businesses from all industries get approved and grow fast. Here’s what they had to say:</p>
@@ -42,7 +41,7 @@ function RealStories() {
                         })}
                     </div>
                 </div>
-                <div  className="absolute left-0 right-0 px-3  -bottom-25">
+                <div className="absolute left-0 right-0 px-3  -bottom-25">
                     <div
                         className="max-w-285 relative  w-full mx-auto flex flex-col items-center text-center rounded-3xl text-white lg:max-h-82 overflow-hidden"
                         style={{
@@ -59,18 +58,18 @@ function RealStories() {
                                 opacity: 0.5,
                             }}
                         />
-                    <div className="relative z-10  max-w-189.5 w-full flex flex-col  items-center mt-15 mb-15 ">
-                        <h4 className="font-Montserrat text-medium-heading font-bold leading-[120%] max-sm:text-medium max-sm:px-2">
-                            Love what Rabbit Did for You! <br /> Share your story and help
-                            others discover human-first funding.
-                        </h4>
-                        <Button className=" mt-8  max-sm:mx-2 max-sm:px-7 rounded-[200px] flex items-center py-5.5 px-8.75 gap-[10.98px] bg-[#010101]/24 hover:bg-[#010101] transition-all duration-300 border-none text-white font-Montserrat font-semibold text-body leading-[100%] tracking-[0%]"
-                            text="Submit Your Testimonial"
-                        icon="BTN_ARROW_ICON"   
-                        />
+                        <div className="relative z-10  max-w-189.5 w-full flex flex-col  items-center mt-15 mb-15 ">
+                            <h4 className="font-Montserrat text-medium-heading font-bold leading-[120%] max-sm:text-medium max-sm:px-2">
+                                Love what Rabbit Did for You! <br /> Share your story and help
+                                others discover human-first funding.
+                            </h4>
+                            <Button className=" mt-8  max-sm:mx-2 max-sm:px-7 rounded-[200px] flex items-center py-5.5 px-8.75 gap-[10.98px] bg-[#010101]/24 hover:bg-[#010101] transition-all duration-300 border-none text-white font-Montserrat font-semibold text-body leading-[100%] tracking-[0%]"
+                                text="Submit Your Testimonial"
+                                icon="BTN_ARROW_ICON"
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     )

@@ -1,4 +1,3 @@
-import React from 'react'
 import { BETTER_TECH_DATA } from '../utils/helper'
 import Icons from './common/Icons'
 
@@ -10,7 +9,7 @@ function BetterTech() {
                 <div className='flex flex-row items-center max-lg:flex-wrap  max-md:justify-center justify-between w-full'>
                     {BETTER_TECH_DATA.map((item, i) => {
                         return <div key={i} className='flex flex-col items-center  gap-3 max-w-70 py-6'>
-                            <span className='bg-[#7AC943] rounded-xl w-14.5 h-14.5 flex items-center justify-center'><Icons icon={item.icon}/></span>
+                            <span className='bg-[#7AC943] rounded-xl w-14.5 h-14.5 flex items-center justify-center'><Icons icon={item.icon} /></span>
                             <h5 className='max-w-50.5 text-[#2B2B2B] text-center text-subtitle font-semibold tracking-[0%] leading-[125%] font-Rubik max-sm:text-body'>{item.title}</h5>
                         </div>
                     })}

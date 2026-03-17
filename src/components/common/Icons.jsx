@@ -1,5 +1,5 @@
 import React from "react";
-const Icons = ({ icon, pathClass, className }) => {
+const Icons = ({ icon, className }) => {
     const iconList = {
         LOGO_ICON: (
             <svg width="132" height="60" viewBox="0 0 132 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +132,7 @@ const Icons = ({ icon, pathClass, className }) => {
                 </defs>
             </svg>
         ),
-    
+
 
         FIVE_STAR_ICON: (
             < svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg" >
@@ -193,7 +193,6 @@ const Icons = ({ icon, pathClass, className }) => {
             </svg>
         ),
 
-  
 
     };
     const addClassName = (icon) => {
